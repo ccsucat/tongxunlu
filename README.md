@@ -1,2 +1,2 @@
 # tongxunlu
-登录页面contrlloer在ViewController
+登录页面controller在ViewController
