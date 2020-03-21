@@ -7,10 +7,12 @@
 //
 
 #import "myCollectionViewController.h"
+#import "Option.h"
 
 @interface myCollectionViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property(nonatomic, strong) UICollectionView *collectionView;
+@property (nonatomic, strong) NSArray *array;
 
 @end
 
@@ -18,13 +20,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NSMutableArray *arrayM = [NSMutableArray arrayWithCapacity:100];
+    for (int i = 0; i < 100; i++) {
+        Option *op = [[Option alloc] init];
+        [arrayM addObject: op];
+    }
+    _array = arrayM;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"collectionView";
     //创建一个布局类
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     //设置布局方向为垂直流布局
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    //layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     layout.sectionInset = UIEdgeInsetsMake(20, 20, 20, 20);
     //设置每个item的大小
     layout.itemSize = CGSizeMake(100, 100);
@@ -42,6 +50,9 @@
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"collect" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor colorWithRed:arc4random()%255/255.0 green:arc4random()%255/255.0 blue:arc4random()%255/255.0 alpha:1];
+    //Option *op = [[Option alloc] init];
+   // cell.op = self.array[indexPath.item];
+   // cell.op;
     return cell;
 }
 
@@ -55,7 +66,7 @@
  
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 100;
+    return 50;
 }
 
 @end

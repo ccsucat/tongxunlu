@@ -14,6 +14,10 @@
 		2D6F18BF2410F7A500E97040 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F18BE2410F7A500E97040 /* EditViewController.m */; };
 		2D6F18C924110DA000E97040 /* myScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F18C824110DA000E97040 /* myScrollViewController.m */; };
 		2D6F18D22411335D00E97040 /* myCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D6F18D12411335D00E97040 /* myCollectionViewController.m */; };
+		2DCFABD92415FE8900B36BE1 /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFABD82415FE8900B36BE1 /* Banner.m */; };
+		2DCFABDC2415FEAB00B36BE1 /* BannerImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFABDB2415FEAB00B36BE1 /* BannerImage.m */; };
+		2DCFABDF2415FF5400B36BE1 /* HTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFABDE2415FF5400B36BE1 /* HTTPSessionManager.m */; };
+		2DCFABE22416002400B36BE1 /* BannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCFABE12416002400B36BE1 /* BannerCell.m */; };
 		2DE9FB84240FBEA8001D34BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9FB83240FBEA8001D34BF /* AppDelegate.m */; };
 		2DE9FB87240FBEA8001D34BF /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9FB86240FBEA8001D34BF /* SceneDelegate.m */; };
 		2DE9FB8A240FBEA8001D34BF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9FB89240FBEA8001D34BF /* ViewController.m */; };
@@ -75,6 +79,14 @@
 		2D6F18D724113BFA00E97040 /* studyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6F18F124113BFB00E97040 /* studyListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D6F18FC24113BFC00E97040 /* studyListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studyListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCFABD72415FE8900B36BE1 /* Banner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
+		2DCFABD82415FE8900B36BE1 /* Banner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
+		2DCFABDA2415FEAB00B36BE1 /* BannerImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerImage.h; sourceTree = "<group>"; };
+		2DCFABDB2415FEAB00B36BE1 /* BannerImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerImage.m; sourceTree = "<group>"; };
+		2DCFABDD2415FF5400B36BE1 /* HTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPSessionManager.h; sourceTree = "<group>"; };
+		2DCFABDE2415FF5400B36BE1 /* HTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPSessionManager.m; sourceTree = "<group>"; };
+		2DCFABE02416002400B36BE1 /* BannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerCell.h; sourceTree = "<group>"; };
+		2DCFABE12416002400B36BE1 /* BannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerCell.m; sourceTree = "<group>"; };
 		2DE9FB7F240FBEA8001D34BF /* temp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = temp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DE9FB82240FBEA8001D34BF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2DE9FB83240FBEA8001D34BF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -167,6 +179,10 @@
 			children = (
 				2D6F18B4241027FA00E97040 /* Option.h */,
 				2D6F18B5241027FA00E97040 /* Option.m */,
+				2DCFABD72415FE8900B36BE1 /* Banner.h */,
+				2DCFABD82415FE8900B36BE1 /* Banner.m */,
+				2DCFABDA2415FEAB00B36BE1 /* BannerImage.h */,
+				2DCFABDB2415FEAB00B36BE1 /* BannerImage.m */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -182,6 +198,8 @@
 				2DE9FB83240FBEA8001D34BF /* AppDelegate.m */,
 				2DE9FB85240FBEA8001D34BF /* SceneDelegate.h */,
 				2DE9FB86240FBEA8001D34BF /* SceneDelegate.m */,
+				2DCFABDD2415FF5400B36BE1 /* HTTPSessionManager.h */,
+				2DCFABDE2415FF5400B36BE1 /* HTTPSessionManager.m */,
 			);
 			name = other;
 			sourceTree = "<group>";
@@ -191,6 +209,8 @@
 			children = (
 				2D6F18BA2410A98F00E97040 /* ListCell.h */,
 				2D6F18BB2410A98F00E97040 /* ListCell.m */,
+				2DCFABE02416002400B36BE1 /* BannerCell.h */,
+				2DCFABE12416002400B36BE1 /* BannerCell.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -548,15 +568,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DCFABDF2415FF5400B36BE1 /* HTTPSessionManager.m in Sources */,
 				2D6F18C924110DA000E97040 /* myScrollViewController.m in Sources */,
 				2D6F18B6241027FA00E97040 /* Option.m in Sources */,
 				2D6F18BF2410F7A500E97040 /* EditViewController.m in Sources */,
+				2DCFABD92415FE8900B36BE1 /* Banner.m in Sources */,
 				2D6F18BC2410A98F00E97040 /* ListCell.m in Sources */,
 				2D6F18AA24101D9300E97040 /* ListViewController.m in Sources */,
 				2DE9FB8A240FBEA8001D34BF /* ViewController.m in Sources */,
 				2DE9FB84240FBEA8001D34BF /* AppDelegate.m in Sources */,
 				2DE9FB95240FBEA8001D34BF /* main.m in Sources */,
 				2D6F18D22411335D00E97040 /* myCollectionViewController.m in Sources */,
+				2DCFABDC2415FEAB00B36BE1 /* BannerImage.m in Sources */,
+				2DCFABE22416002400B36BE1 /* BannerCell.m in Sources */,
 				2D6F18B924102FAF00E97040 /* AddOptionController.m in Sources */,
 				2DE9FB87240FBEA8001D34BF /* SceneDelegate.m in Sources */,
 			);

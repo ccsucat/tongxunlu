@@ -84,8 +84,8 @@
 {
     NSLog(@"hello world");
     ListViewController *controller = [[ListViewController alloc] init];
-    //controller.title = [NSString stringWithFormat:@"尊敬的%@",self.accountTextField.text];
-    controller.title = @"第一行特殊显示";
+    controller.title = [NSString stringWithFormat:@"尊敬的%@",self.accountTextField.text];
+   // controller.title = @"";
     [self.navigationController pushViewController:controller animated:YES];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
